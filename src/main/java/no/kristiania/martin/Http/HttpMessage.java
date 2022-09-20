@@ -9,15 +9,16 @@ import java.util.TreeMap;
 public class HttpMessage {
 
     private final String startLine;
-    private final Map<String, String> httpHeaders;
+    public final Map<String, String> httpHeaders;
     String body;
     int contentLength;
 
     public HttpMessage(Socket socket) throws IOException {
       startLine = readLine(socket);
       httpHeaders = readHeaders(socket);
+      if (getHeader("Content-Length") != null) {
       contentLength = Integer.parseInt(getHeader("Content-Length"));
-      body = readBody(socket);
+      body = readBody(socket);}
     }
 
     public String getStartLine() {
