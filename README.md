@@ -1,1 +1,2 @@
 # SocketPractice
+[![Java CI with Maven](https://github.com/SorensenMartin/SocketPractice1/actions/workflows/maven.yml/badge.svg)](https://github.com/SorensenMartin/SocketPractice1/actions/workflows/maven.yml)
