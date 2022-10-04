@@ -7,6 +7,10 @@ import java.nio.charset.StandardCharsets;
 
 public class HttpServer {
 
+    public HttpServer(int port) {
+
+    }
+
     public static void main(String[] args) throws IOException {
         System.out.println("Hello World");
 
@@ -27,5 +31,9 @@ public class HttpServer {
                 "\r\n" +
                 body).getBytes(StandardCharsets.UTF_8));
 
+    }
+
+    public int getPort() {
+        return 0;
     }
 }
